@@ -1,12 +1,12 @@
 package com.vicky;
 
 public class Student {
-    String name;
+    String name; //在類別裡面的第一層是屬性
     int english;
     int math;
     public  Student(String name) {
         this.name = name;
-    }
+    } //建構子裡面有方法
     public Student(String name,int english,int math){
         this(name);
         //this.name = name;
