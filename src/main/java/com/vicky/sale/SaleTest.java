@@ -1,4 +1,4 @@
-package com.vicky;
+package com.vicky.sale;
 
 public class SaleTest {
     public static void main(String[] args) {

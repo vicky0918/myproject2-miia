@@ -1,4 +1,6 @@
-package com.vicky;
+package com.vicky.sale;
+
+import com.vicky.sale.CustomerTest;
 
 public class SilverCustomer extends CustomerTest {
     public SilverCustomer(String id,int amount){

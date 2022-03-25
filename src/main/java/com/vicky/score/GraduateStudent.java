@@ -1,6 +1,8 @@
-package com.vicky;
+package com.vicky.score;
 
-public class GraduateStudent extends Student{
+import com.vicky.score.Student;
+
+public class GraduateStudent extends Student {
     int thesis;
     public GraduateStudent(String name,
                            int english,

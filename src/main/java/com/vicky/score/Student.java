@@ -1,4 +1,4 @@
-package com.vicky;
+package com.vicky.score;
 
 public class Student {
     String name; //在類別裡面的第一層是屬性

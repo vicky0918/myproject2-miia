@@ -1,4 +1,4 @@
-package com.vicky;
+package com.vicky.score;
 
 public class Scoring {
     public static void main(String[] args) {

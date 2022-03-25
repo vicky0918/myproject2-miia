@@ -1,4 +1,4 @@
-package com.vicky;
+package com.vicky.sale;
 
 public class Customer {
     String id;
