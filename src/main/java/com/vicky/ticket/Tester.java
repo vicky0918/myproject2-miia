@@ -4,25 +4,55 @@ import java.util.Scanner;
 
 public class Tester {
     public static void main(String[] args) {
-        Ticket ticket = new Ticket
-                (Station.TAIPEI_STATION, Station.TAICHUNG_STATION);
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Your start station?()");
-        Station startStation = null;
-        Station endStation = null;
+        System.out.println("Your start station?(1.Taipei 2.Taichung 3.Kaohsiung)");
+        Station start = null;
         int choice = Integer.parseInt(scanner.next());
 
         switch (choice){
             case 1:
-                startStation = Station.TAIPEI_STATION;
+                start = Station.TAIPEI_STATION;
                 break;
             case 2:
-                startStation = Station.TAICHUNG_STATION;
+                start = Station.TAICHUNG_STATION;
                 break;
             case 3:
-                startStation = Station.KAOHSIUNG_STATION;
+                start = Station.KAOHSIUNG_STATION;
                 break;
         }
+        System.out.println("Your end station?(1.Taipei 2.Taichung 3.Kaohsiung)");
+        Station destination = null;
+        choice= Integer.parseInt(scanner.next());
+
+        switch (choice){
+            case 1:
+                destination = Station.TAIPEI_STATION;
+                break;
+            case 2:
+                destination = Station.TAICHUNG_STATION;
+                break;
+            case 3:
+                destination = Station.KAOHSIUNG_STATION;
+                break;
+        }
+        System.out.println("Which kind of ticket? 1)Normal Ticket 2)Student Ticket 3)Elder Ticket 4)Return Tickets");
+        choice = Integer.parseInt(scanner.next());
+        Ticket ticket = null;
+        switch (choice) {
+            case 1:
+                ticket = new Ticket(start, destination);
+                break;
+            case 2:
+                ticket = new StudentTicket(start, destination);
+                break;
+            case 3:
+                ticket = new ElderTicket(start, destination);
+                break;
+            case 4:
+                ticket = new ReturnTicket(start,destination);
+        }
+        ticket.print();
+
     }
 
 
