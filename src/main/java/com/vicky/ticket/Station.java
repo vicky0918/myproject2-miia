@@ -7,7 +7,6 @@ public class Station {
             new Station(200,"Taichung");
     public static final Station KAOHSIUNG_STATION =
             new Station(300,"Kaohsiung");
-
     int id;
     String name;
     public Station(int id ,String name){
