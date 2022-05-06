@@ -17,8 +17,21 @@ public class Ticket {
         Scanner scanner = new Scanner(System.in);
         this.start = start;
         this.destination = destination;
+        int diff = Math.abs(start.id - destination.id);
+        System.out.print("diff:" + diff);
+        switch (diff){
+            case 100:
+                price = 500;
+                break;
+            case 200:
+                price = 600;
+                break;
+            case 300:
+                price = 1100;
+                break;
+        }
 
-        if(start==Station.TAIPEI_STATION){
+        /*if(start==Station.TAIPEI_STATION){
             if(destination==Station.TAICHUNG_STATION){
                 price = 600;
             }else{
@@ -36,7 +49,7 @@ public class Ticket {
             }else{
                 price = 900;
             }
-        }
+        }*/
         System.out.println("How many?");
         number = Integer.parseInt(scanner.next());
     }

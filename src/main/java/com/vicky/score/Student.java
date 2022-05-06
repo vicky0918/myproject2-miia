@@ -1,6 +1,6 @@
 package com.vicky.score;
 
-public class Student {
+public class Student implements Printable{
     String name; //在類別裡面的第一層是屬性
     int english;
     int math;
@@ -19,7 +19,7 @@ public class Student {
         english = -1;
         math = -1;*/
     }
-
+    @Override
     public void print(){
         System.out.print(name + "\t"
                 + math + "\t" + english+"\t"+ getAverage());
@@ -31,4 +31,6 @@ public class Student {
     public int getAverage(){
        return ((math+english)/2);
     }
+
 }
+
