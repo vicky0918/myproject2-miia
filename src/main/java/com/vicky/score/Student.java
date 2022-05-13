@@ -1,5 +1,5 @@
 package com.vicky.score;
-
+// public 是修飾字Modifier
 public class Student implements Printable{
     String name; //在類別裡面的第一層是屬性
     int english;
