@@ -3,6 +3,8 @@ package com.vicky.sale;
 import java.util.ArrayList;
 import java.util.List;
 
+//Graphical User Interface, GUI
+
 public class SaleTest {
     public static void main(String[] args) {
         List<CustomerTest> customers = new ArrayList<>();

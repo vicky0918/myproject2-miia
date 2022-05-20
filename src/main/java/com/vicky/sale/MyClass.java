@@ -1,6 +1,6 @@
 package com.vicky.sale;
 
-public class MyClass implements MyInterface{
+public class MyClass implements MyInterface{        //實作介面
     public void test(){
 
     }

@@ -3,6 +3,7 @@ package com.vicky.score;
 import com.vicky.score.Student;
 
 public class GraduateStudent extends Student {
+
     int thesis;
     public GraduateStudent(String name,
                            int english,
