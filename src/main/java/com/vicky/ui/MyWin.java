@@ -16,7 +16,7 @@ public class MyWin {
         //add Component
         JButton button = new JButton("OK");     //Ctrl+P可以查可放入內容
         //匿名類別,Anonymous class
-        button.addActionListener(new ActionListener() {
+       button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("Hello World~");
