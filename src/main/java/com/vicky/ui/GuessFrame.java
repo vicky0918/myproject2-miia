@@ -14,7 +14,7 @@ public class GuessFrame extends JFrame {
     public GuessFrame(){
 
         super();
-        System.out.println("secret:" +secret);
+        System.out.println("secret:" );
         setSize(600,400);
         setLocation(300,200);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -23,13 +23,13 @@ public class GuessFrame extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
                 int num = Integer.parseInt(number.getText());
                 System.out.println(num);
-                if(num > secrrt){
+                /*if(num >secret ){
                     label.setText("Smaller");
                 }else if (num < secret){
                     label.setText("Bigger");
                 }else{
                     label.setText("Bingo,the secret number is " + secret);
-                }
+                }*/
 //                label.setText("Hello!");
             }
         });
